@@ -62,7 +62,7 @@ h1 {
     margin-left: 10px;
 }
 
-h3 {
+h2 {
     text-align: center;
     background-image: linear-gradient(to bottom, #6b4428, white);
     border-radius: 10px 10px 0 0;
@@ -76,7 +76,7 @@ h3 {
     height: auto;
 }
 
-h4 {
+h3 {
     text-align: center;
 }
 .origin div {

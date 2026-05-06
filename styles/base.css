@@ -65,16 +65,17 @@ h1 {
 
 h2 {
     text-align: center;
-    background-image: linear-gradient(to bottom, #6b4428, white);
-    border-radius: 10px 10px 0 0;
-    padding-top: 12px;
+    background-color: #6b4428;
+    border-radius: 10px;
+    padding: 12px 0;
+    color: white;
 }
 .myself {
     display: flex;
 }
 .myself img {
-    width: 20%;
-    height: auto;
+    max-width: 100%;
+    aspect-ratio: 1;
 }
 
 h3 {
@@ -108,9 +109,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #776e6a;
+    background-color: #413c3a;
     padding-top: 15px;
-    color: white;
+    color: #f5f2f0;
+    font-weight: 500;
 }
 .general {
     display: flex;

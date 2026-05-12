@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+}
+
+
+header {
+    background-color: #008d44;
+}
+h1 {
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+}
+
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.data {
+    position: relative;
+    width: 90vw;
+    margin: 2rem auto;
+    
+}
+.weather {
+    position: relative;
+    width: 90vw;
+    margin: 0 auto 1rem;
+}
+h2 {
+    text-align: center;
+    grid-column: 1 / 3;
+}
+.data, .weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.right {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+span {
+    margin: 16px 0;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #c82a35;
+    padding-top: 15px;
+    color: #f5f2f0;
+    font-weight: 500;
+}
+
+.general {
+    display: flex;
+    justify-content: center;
+}
+
+.general p {
+    margin: 0 15px;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 32em) {
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 8rem;
+        left: 15px;
+        width: 20vw;
+        padding: 1rem 1rem;
+        background-color: white;
+        opacity: .8;
+    }
+    .data h2 {
+        background-color: #008d44;
+        padding: 1rem 1rem;
+        color: white;
+    }
+    .data p, .weather span {
+        margin: 5px 0;
+    }
+    .weather {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        bottom: -5rem;
+        right: 15px;
+        width: 20vw;
+        padding: 1rem 1rem;
+        background-color: white;
+        opacity: .875;
+    }
+    .data,
+    .weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .left {
+        grid-column: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .right {
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .weather h2 {
+        background-color: #008d44;
+        padding: 1rem 1rem;
+        color: white;
+    }
+
+    .weather p {
+        margin: 5px 0;
+    }
+}

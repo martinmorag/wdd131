@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="author" content="Martin Moraga" />
+    <meta name="description"
+        content="Hi! This is Florence, a beautiful place in Italy I wish to visit someday!" />
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Florence, Italy</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/place/place_large_t.webp" media="(min-width: 1000px)">
+                <source srcset="images/place/place_medium.webp" media="(min-width: 500px)">
+                <img src="images/place/place_small.webp" alt="Picture of Florence" width="500" height="250">
+            </picture>
+        </div>
+        <div class="info">
+            <div class="data">
+                <h2>Data</h2>
+                <div class="left">
+                    <p>Area: </p>
+                    <p>Population: </p>
+                    <p>Languages: </p>
+                    <p>Currency: </p>
+                    <p>Time Zone: </p>
+                    <p>Calling Code: </p>
+                    <p>Internet TLD: </p>
+                </div>
+                <div class="right">
+                    <p>102 Km²</p>
+                    <p>378,239</p>
+                    <p>Italian</p>
+                    <p>Euro</p>
+                    <p>GMT+2</p>
+                    <p>055</p>
+                    <p>Open Fiber</p>
+                </div>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <div class="left">
+                    <p>Temperature: </p>
+                    <p>Conditions: </p>
+                    <p>Wind: </p>
+                    <p>Wind Chill: </p>
+                </div>
+                <div class="right">
+                    <span id="temperature">10°C</span>
+                    <span>Partly Cloud</span>
+                    <span id="wind">5 km/h</span>
+                    <span id="wind_chill"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="general">
+            <p>&copy; <span id="currentYear"></span> <br> Martin Moraga <br> Argentina</p>
+        </div>
+        <div class="last">
+            <p>Last modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

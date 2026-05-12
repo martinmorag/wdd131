@@ -1,10 +1,14 @@
 body {
     margin: 0;
 }
+:root {
+    --green: #008d44;
+    --red: #c82a35;
+}
 
 
 header {
-    background-color: #008d44;
+    background-color: var(--green);
 }
 h1 {
     margin: 0;
@@ -38,10 +42,13 @@ main {
     width: 90vw;
     margin: 0 auto 1rem;
 }
-.weather img {
-    width: 20px;
-    height: auto;
-    border-radius: 5px;
+.weather h2::after {
+    content: url("/images/place/weather.svg");
+}
+.weather h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 h2 {
     text-align: center;
@@ -73,7 +80,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #c82a35;
+    background-color: var(--red);
     padding-top: 15px;
     color: #f5f2f0;
     font-weight: 500;
@@ -108,7 +115,7 @@ footer {
         opacity: .8;
     }
     .data h2 {
-        background-color: #008d44;
+        background-color: var(--green);
         padding: 1rem 1rem;
         color: white;
     }
@@ -148,7 +155,7 @@ footer {
     }
 
     .weather h2 {
-        background-color: #008d44;
+        background-color: var(--green);
         padding: 1rem 1rem;
         color: white;
     }

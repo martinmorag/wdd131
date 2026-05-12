@@ -38,6 +38,11 @@ main {
     width: 90vw;
     margin: 0 auto 1rem;
 }
+.weather img {
+    width: 20px;
+    height: auto;
+    border-radius: 5px;
+}
 h2 {
     text-align: center;
     grid-column: 1 / 3;

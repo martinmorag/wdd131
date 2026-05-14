@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="./styles/filtered-temples.css">
+    <meta name="author" content="Martin Moraga" />
+    <meta name="description"
+        content="Hi! I'm Martin Moraga and this is a list of temples that I really like, you can find images and the name of the temples here." />
+    <script src="scripts/filtered-temples.js" async></script>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap" />
+</head>
+<body>
+    <header>
+        <p>Temple Album</p>
+        <button type="button" id="menu" title="Hamburger button"></button>
+        <nav>
+            <a href="#" class="home">Home</a>
+            <a href="#" class="old">Old</a>
+            <a href="#" class="new">New</a>
+            <a href="#" class="large">Large</a>
+            <a href="#" class="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <div class="general">
+            <p>&copy; <span id="currentYear"></span> <br> Martin Moraga <br> Argentina</p>
+        </div>
+        <div class="last">
+            <p>Last modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

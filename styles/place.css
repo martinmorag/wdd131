@@ -45,7 +45,7 @@ main {
     margin: 0 auto 1rem;
 }
 .weather h2::after {
-    content: url("/images/place/weather.svg");
+    content: url("/wdd131/images/place/weather.svg");
 }
 .weather h2 {
     display: flex;
@@ -164,6 +164,6 @@ footer {
         margin: 5px 0;
     }
     .weather h2::after {
-        content: "";
+        content: "⛅";
     }
 }

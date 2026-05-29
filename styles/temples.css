@@ -15,11 +15,9 @@ header p {
 nav {
     width: 100vw;
     display: flex;
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    
 }
 nav a {
     display: none;

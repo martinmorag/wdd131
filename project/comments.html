@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Tower Fan Page</title>
+    <meta name="author" content="Martin Moraga" />
+    <meta name="description" content="Hi! If you're a Dark Tower books fan, or trying to find out more about this books series this is the right place for you." />
+    <link rel="stylesheet" href="styles/comments.css">
+    <script src="scripts/comments.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>The Dark Tower</h1>
+        <button type="button" id="menu" title="Hamburger button"></button>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="comments.html">Comments</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="make-comment">
+            <label for="comment">Enter your comment: </label>
+            <textarea id="comment" placeholder="Write your comment here" rows="6"></textarea>
+            <button type="submit" id="add">Add comment</button>
+        </section>
+        <ul id="list"></ul>
+    </main>
+    <footer>
+        <p>Dark Tower</p>
+        <p>Martin Moraga</p>
+    </footer>
+</body>
+</html>

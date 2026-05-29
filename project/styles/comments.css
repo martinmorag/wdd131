@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #E7EEEE;
+    font-family: 'Montserrat';
+}
+
+h1,
+h3 {
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0 1rem;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+li {
+    list-style: none;
+}
+
+.nav a {
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    text-decoration: none;
+    padding: .5rem 0rem;
+    color: #E7EEEE;
+    border-radius: 5px;
+    background-color: #9A031E;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open li {
+    display: block !important;
+}
+
+.nav li {
+    display: none;
+}
+
+.nav.open {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    align-items: center;
+}
+
+.nav {
+    height: 0px;
+}
+
+
+
+main {
+    font-family: 'Cinzel';
+    background-color: #9A031E;
+    color: #E7EEEE;
+    padding: 2rem 0;
+    min-height: 70vh;
+}
+input,
+button {
+    padding: 0.5rem;
+}
+
+button {
+    margin: 0.5rem;
+    font-family: 'Cinzel';
+    background-color: #E7EEEE;
+
+}
+.delete {
+    width: fit-content;
+}
+input {
+    display: flex;
+    gap: 1rem;
+    font-family: 'Cinzel';
+}
+#list {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    list-style: none;
+}
+#list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    border: 1px solid #E7EEEE;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 85vw;
+    margin: 1rem 0;
+    word-break: break-all;
+}
+#list {
+    display: flex;
+    flex-direction: column;
+}
+.make-comment {
+    width: 200px;
+    margin: auto;
+    padding: 1rem 3rem;
+    border: 1px solid #E7EEEE;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #E7EEEE;
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    min-height: 10vh;
+}
+footer p {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+
+@media screen and (min-width: 37.5em) {
+    #menu {
+        display: none;
+    }
+    .nav {
+        flex-direction: row;
+        display: flex;
+        height: 50px;
+    }
+    .nav li {
+        display: block;
+    }
+    .nav a {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+    .nav li:hover {
+        transform: translateY(-5px);
+        cursor: pointer;
+        transition: ease-in-out .5s;
+    }
+
+    #list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    #list li {
+        width: 30vw;
+        margin: 0;
+    }
+}

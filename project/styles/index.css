@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+}
+header {
+    width: 100%;
+    background-color: #E7EEEE;
+    font-family: 'Montserrat';
+}
+h1, h3 {
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0 1rem;
+}
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1rem 0;
+}
+li {
+    list-style: none;
+}
+.nav a {
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    text-decoration: none;
+    padding: .5rem 0rem;
+    color: #E7EEEE;
+    border-radius: 5px;
+    background-color: #9A031E;
+}
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+}
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "❌";
+}
+.open li {
+    display: block !important;
+}
+.nav li {
+    display: none;
+}
+.nav.open {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    align-items: center;
+}
+.nav {
+    height: 0px;
+}
+
+
+
+main {
+    color: #E7EEEE;
+    background-color: #9A031E;
+    font-family: 'Cinzel';
+    min-height: 70vh;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    max-width: 85vw;
+    margin: 0 auto;
+}
+.hero img {
+    margin-top: 1.5rem;
+    width: 85vw;
+    height: auto;
+        
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 85vw;
+    margin: 0 auto;
+}
+.content a {
+    text-decoration: none;
+    padding: .5rem 2rem;
+    color: #E7EEEE;
+    border-radius: 5px;
+    background-color: #9A031E;
+}
+.r-and-c {
+    display: flex;
+    flex-direction: column;
+}
+.reviews, .comments {
+    margin: 2rem;
+}
+.content a {
+    border:1px solid #E7EEEE;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #E7EEEE;
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    min-height: 10vh;
+}
+footer p {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 37.5em) {
+    .hero img {
+        width: 85vw;
+        height: auto;
+    }
+
+    .r-and-c {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+    #menu {
+        display: none;
+    }
+    .nav {
+        flex-direction: row;
+        display: flex;
+        height: 50px;
+    }
+    .nav li {
+        display: block;
+    }
+    .nav a {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+    .nav li:hover {
+        transform: translateY(-5px);
+        cursor: pointer;
+        transition: ease-in-out .5s;
+    }
+}

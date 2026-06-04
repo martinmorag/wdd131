@@ -41,3 +41,21 @@ products.forEach(prod => {
 
     select.append(op)
 })
+
+
+let counter = localStorage.getItem('counter');
+const completed = document.querySelector('.completed')
+const submitBtn = document.querySelector('#submit')
+submitBtn.addEventListener('click', function () {
+    counter = Number(counter) + 1
+    localStorage.setItem('counter', counter)
+    updateCounter()
+})
+function updateCounter() {
+    if (counter === null) {
+        completed.textContent = `The form has been submitted 0 time(s)`
+    } else {
+        completed.textContent = `The form has been submitted ${counter} time(s)`
+    }
+}
+updateCounter()
